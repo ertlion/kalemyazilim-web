@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Kalem Software - The Key to Information",
+    "description": "Since 1989, we provide ERP, POS and automation solutions for the retail and logistics industry."
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "solutions": "Solutions",
+    "references": "References",
+    "industries": "Industries",
+    "blog": "News",
+    "contact": "Contact",
+    "support": "Support"
+  },
+  "hero": {
+    "title": "Your Leading Partner in Retail Technology",
+    "subtitle": "Since 1989, we provide retail and logistics ERP solutions to over 3,000 customers in 36 countries.",
+    "cta": "Explore Our Solutions",
+    "contact": "Get in Touch",
+    "trustCountries": "36 Countries",
+    "trustCustomers": "3000+ Clients",
+    "trustYears": "35+ Years"
+  },
+  "whyUs": {
+    "title": "Why Kalem Software?",
+    "subtitle": "The Key to Information - Your trusted partner in retail technology",
+    "experience": {
+      "title": "35+ Years Experience",
+      "description": "We have been developing software solutions for the retail and logistics sector since 1989."
+    },
+    "customers": {
+      "title": "36 Countries, 3000+ Customers",
+      "description": "We serve over 3,000 businesses in Turkey and worldwide."
+    },
+    "support247": {
+      "title": "24/7 Support",
+      "description": "Our technical team is always by your side with our 0850 800 21 21 support line."
+    },
+    "integration": {
+      "title": "Easy Integration",
+      "description": "We provide seamless integration with Logo, Ingenico and other systems."
+    }
+  },
+  "solutions": {
+    "title": "Our Solutions",
+    "subtitle": "Retail solutions tailored to your business with the KL-Retail product family",
+    "viewAll": "All Solutions",
+    "details": "View Details",
+    "features": "Features",
+    "requestDemo": "Request Demo",
+    "categories": {
+      "all": "All",
+      "pos": "POS Solutions",
+      "mobile": "Mobile Solutions",
+      "erp": "ERP",
+      "crm": "CRM",
+      "sector": "Sectoral",
+      "management": "Management",
+      "hardware": "Hardware",
+      "integration": "Integration"
+    }
+  },
+  "stats": {
+    "customers": "Customers",
+    "experience": "Countries",
+    "products": "Product Solutions",
+    "support": "Quality Certificates"
+  },
+  "references": {
+    "title": "Our References",
+    "subtitle": "Some of those we added value to"
+  },
+  "industries": {
+    "title": "Our Industries",
+    "subtitle": "Industries we serve"
+  },
+  "contactCta": {
+    "title": "Contact Us for Your Project",
+    "subtitle": "Let's determine the best KL-Retail solution for you together.",
+    "cta": "Get in Touch"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Reach out to us for your questions and requests",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "phone": "Phone",
+      "company": "Company Name",
+      "subject": "Subject",
+      "message": "Your Message",
+      "send": "Send Message",
+      "sending": "Sending...",
+      "success": "Your message has been sent successfully!",
+      "error": "An error occurred, please try again."
+    },
+    "info": {
+      "address": "Address",
+      "phone": "Phone",
+      "email": "Email",
+      "workingHours": "Working Hours",
+      "weekdays": "Monday - Friday: 09:00 - 18:00"
+    }
+  },
+  "blog": {
+    "title": "News",
+    "subtitle": "Latest and archived news about Kalem Software",
+    "readMore": "Read More",
+    "relatedPosts": "Related News",
+    "noPosts": "No news yet.",
+    "share": "Share"
+  },
+  "support": {
+    "title": "Support",
+    "subtitle": "Frequently asked questions and support information",
+    "faq": "Frequently Asked Questions"
+  },
+  "about": {
+    "title": "About Us",
+    "subtitle": "Get to know Kalem Software"
+  },
+  "footer": {
+    "description": "A pioneering technology company producing ERP solutions for the retail and logistics industry since 1989.",
+    "quickLinks": "Corporate",
+    "sectors": "Our Industries",
+    "contactInfo": "Contact Information",
+    "rights": "All rights reserved.",
+    "address": "Maltepe Mah. Londra Asfalti Cad. A-B Section No: 38 Zeytinburnu / Istanbul, Turkey",
+    "phone": "0 (212) 222 21 21",
+    "phone2": "0 (212) 320 61 57",
+    "supportPhone": "0850 800 21 21",
+    "email": "info@kalemyazilim.com",
+    "tagline": "The Key to Information",
+    "newsletter": "Subscribe to Our Newsletter",
+    "newsletterPlaceholder": "Your email address",
+    "newsletterCta": "Subscribe"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "search": "Search",
+    "noResults": "No results found."
+  }
+}

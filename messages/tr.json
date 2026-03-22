@@ -1,0 +1,148 @@
+{
+  "meta": {
+    "title": "Kalem Yazılım - Bilginin Anahtarı",
+    "description": "1989'dan bu yana perakende ve lojistik sektörüne yönelik ERP, POS ve otomasyon çözümleri sunuyoruz."
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "solutions": "Çözümler",
+    "references": "Referanslar",
+    "industries": "Sektörler",
+    "blog": "Haberler",
+    "contact": "İletişim",
+    "support": "Destek"
+  },
+  "hero": {
+    "title": "Perakende Teknolojilerinde Lider Çözüm Ortağınız",
+    "subtitle": "1989'dan bu yana 36 ülkede, 3.000'in üzerinde müşteriye perakende ve lojistik ERP çözümleri sunuyoruz.",
+    "cta": "Çözümlerimizi Keşfedin",
+    "contact": "Bize Ulaşın",
+    "trustCountries": "36 Ülke",
+    "trustCustomers": "3000+ Müşteri",
+    "trustYears": "35+ Yıl"
+  },
+  "whyUs": {
+    "title": "Neden Kalem Yazılım?",
+    "subtitle": "Bilginin Anahtarı - Perakende teknolojilerinde güvenilir çözüm ortağınız",
+    "experience": {
+      "title": "35+ Yıl Tecrübe",
+      "description": "1989'dan bu yana perakende ve lojistik sektöründe yazılım çözümleri geliştiriyoruz."
+    },
+    "customers": {
+      "title": "36 Ülke, 3000+ Müşteri",
+      "description": "Türkiye ve dünyada 3.000'in üzerinde işletmeye hizmet veriyoruz."
+    },
+    "support247": {
+      "title": "7/24 Destek",
+      "description": "0850 800 21 21 destek hattımız ile teknik ekibimiz her an yanınızda."
+    },
+    "integration": {
+      "title": "Kolay Entegrasyon",
+      "description": "Logo, Ingenico ve diğer sistemlerle sorunsuz entegrasyon sağlıyoruz."
+    }
+  },
+  "solutions": {
+    "title": "Çözümlerimiz",
+    "subtitle": "KL-Retail ürün ailesi ile işletmenize özel perakende çözümleri",
+    "viewAll": "Tüm Çözümler",
+    "details": "Detayları İncele",
+    "features": "Özellikler",
+    "requestDemo": "Demo Talep Et",
+    "categories": {
+      "all": "Tümü",
+      "pos": "POS Çözümleri",
+      "mobile": "Mobil Çözümler",
+      "erp": "ERP",
+      "crm": "CRM",
+      "sector": "Sektörel",
+      "management": "Yönetim",
+      "hardware": "Donanım",
+      "integration": "Entegrasyon"
+    }
+  },
+  "stats": {
+    "customers": "Müşteri",
+    "experience": "Ülke",
+    "products": "Ürün Çözümü",
+    "support": "Kalite Belgesi"
+  },
+  "references": {
+    "title": "Referanslarımız",
+    "subtitle": "Değer kattıklarımızdan bazıları"
+  },
+  "industries": {
+    "title": "Sektörlerimiz",
+    "subtitle": "Hizmet verdiğimiz sektörler"
+  },
+  "contactCta": {
+    "title": "Projeniz İçin Bize Ulaşın",
+    "subtitle": "Size en uygun KL-Retail çözümünü birlikte belirleyelim.",
+    "cta": "İletişime Geçin"
+  },
+  "contact": {
+    "title": "İletişim",
+    "subtitle": "Sorularınız ve talepleriniz için bize ulaşın",
+    "form": {
+      "name": "Adınız Soyadınız",
+      "email": "E-posta Adresiniz",
+      "phone": "Telefon",
+      "company": "Firma Adı",
+      "subject": "Konu",
+      "message": "Mesajınız",
+      "send": "Mesaj Gönder",
+      "sending": "Gönderiliyor...",
+      "success": "Mesajınız başarıyla gönderildi!",
+      "error": "Bir hata oluştu, lütfen tekrar deneyin."
+    },
+    "info": {
+      "address": "Adres",
+      "phone": "Telefon",
+      "email": "E-posta",
+      "workingHours": "Çalışma Saatleri",
+      "weekdays": "Pazartesi - Cuma: 09:00 - 18:00"
+    }
+  },
+  "blog": {
+    "title": "Haberler",
+    "subtitle": "Kalem Yazılım hakkında güncel ve geçmiş haberler",
+    "readMore": "Devamını Oku",
+    "relatedPosts": "İlgili Haberler",
+    "noPosts": "Henüz haber bulunmuyor.",
+    "share": "Paylaş"
+  },
+  "support": {
+    "title": "Destek",
+    "subtitle": "Sıkça sorulan sorular ve destek bilgileri",
+    "faq": "Sıkça Sorulan Sorular"
+  },
+  "about": {
+    "title": "Hakkımızda",
+    "subtitle": "Kalem Yazılım'ı yakından tanıyın"
+  },
+  "footer": {
+    "description": "1989'dan bu yana perakende ve lojistik sektörüne yönelik ERP çözümleri üreten öncü bir teknoloji şirketi.",
+    "quickLinks": "Kurumsal",
+    "sectors": "Sektörlerimiz",
+    "contactInfo": "İletişim Bilgileri",
+    "rights": "Tüm hakları saklıdır.",
+    "address": "Maltepe Mah. Londra Asfaltı Cad. A-B Kısım No: 38 İç Kapı No: K1 Zeytinburnu / İstanbul",
+    "phone": "0 (212) 222 21 21",
+    "phone2": "0 (212) 320 61 57",
+    "supportPhone": "0850 800 21 21",
+    "email": "info@kalemyazilim.com",
+    "tagline": "Bilginin Anahtarı",
+    "newsletter": "Bültenimize Abone Olun",
+    "newsletterPlaceholder": "E-posta adresiniz",
+    "newsletterCta": "Abone Ol"
+  },
+  "common": {
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "back": "Geri",
+    "next": "İleri",
+    "previous": "Önceki",
+    "search": "Ara",
+    "noResults": "Sonuç bulunamadı."
+  }
+}

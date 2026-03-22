@@ -1,0 +1,170 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model AdminUser {
+  id           String   @id @default(cuid())
+  email        String   @unique
+  passwordHash String   @map("password_hash")
+  name         String
+  createdAt    DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  lastLoginAt  DateTime? @map("last_login_at")
+
+  auditLogs AuditLog[]
+
+  @@map("admin_users")
+}
+
+model Post {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  coverImage  String?  @map("cover_image")
+  published   Boolean  @default(false)
+  publishedAt DateTime? @map("published_at")
+  createdAt   DateTime @default(now()) @map("created_at")
+  updatedAt   DateTime @updatedAt @map("updated_at")
+
+  translations PostTranslation[]
+
+  @@map("posts")
+}
+
+model PostTranslation {
+  id               String @id @default(cuid())
+  postId           String @map("post_id")
+  locale           String
+  title            String
+  excerpt          String @default("")
+  content          String @default("")
+  metaTitle        String @default("") @map("meta_title")
+  metaDescription  String @default("") @map("meta_description")
+
+  post Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+
+  @@unique([postId, locale])
+  @@map("post_translations")
+}
+
+model Product {
+  id         String   @id @default(cuid())
+  slug       String   @unique
+  icon       String?
+  coverImage String?  @map("cover_image")
+  category   String   @default("pos")
+  sortOrder  Int      @default(0) @map("sort_order")
+  published  Boolean  @default(true)
+  createdAt  DateTime @default(now()) @map("created_at")
+  updatedAt  DateTime @updatedAt @map("updated_at")
+
+  translations ProductTranslation[]
+
+  @@map("products")
+}
+
+model ProductTranslation {
+  id               String @id @default(cuid())
+  productId        String @map("product_id")
+  locale           String
+  title            String
+  shortDescription String @default("") @map("short_description")
+  description      String @default("")
+  features         String @default("[]")
+  metaTitle        String @default("") @map("meta_title")
+  metaDescription  String @default("") @map("meta_description")
+
+  product Product @relation(fields: [productId], references: [id], onDelete: Cascade)
+
+  @@unique([productId, locale])
+  @@map("product_translations")
+}
+
+model Page {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  createdAt DateTime @default(now()) @map("created_at")
+  updatedAt DateTime @updatedAt @map("updated_at")
+
+  translations PageTranslation[]
+
+  @@map("pages")
+}
+
+model PageTranslation {
+  id              String @id @default(cuid())
+  pageId          String @map("page_id")
+  locale          String
+  title           String
+  content         String @default("")
+  metaTitle       String @default("") @map("meta_title")
+  metaDescription String @default("") @map("meta_description")
+
+  page Page @relation(fields: [pageId], references: [id], onDelete: Cascade)
+
+  @@unique([pageId, locale])
+  @@map("page_translations")
+}
+
+model Reference {
+  id        String   @id @default(cuid())
+  name      String
+  logo      String?
+  website   String?
+  sortOrder Int      @default(0) @map("sort_order")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("references")
+}
+
+model Media {
+  id        String   @id @default(cuid())
+  filename  String
+  path      String
+  mimeType  String   @map("mime_type")
+  size      Int
+  alt       String   @default("")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("media")
+}
+
+model ContactMessage {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  phone     String   @default("")
+  company   String   @default("")
+  subject   String   @default("")
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now()) @map("created_at")
+
+  @@map("contact_messages")
+}
+
+model Setting {
+  id    String @id @default(cuid())
+  key   String @unique
+  value String @default("")
+
+  @@map("settings")
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  adminId   String   @map("admin_id")
+  action    String
+  entity    String   @default("")
+  entityId  String   @default("") @map("entity_id")
+  metadata  String   @default("{}")
+  createdAt DateTime @default(now()) @map("created_at")
+
+  admin AdminUser @relation(fields: [adminId], references: [id])
+
+  @@map("audit_logs")
+}
