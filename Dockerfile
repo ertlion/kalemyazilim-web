@@ -40,6 +40,9 @@ COPY --from=builder --chown=nextjs:nodejs /app/prisma ./prisma
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/.prisma ./node_modules/.prisma
 COPY --from=builder --chown=nextjs:nodejs /app/node_modules/@prisma ./node_modules/@prisma
 
+# SQLite needs write access to both the db file AND directory (for WAL/journal)
+RUN chmod 777 /app/prisma && chmod 666 /app/prisma/dev.db
+
 USER nextjs
 
 EXPOSE 3000
