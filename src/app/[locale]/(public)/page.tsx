@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { prisma } from "@/lib/db";
 import Hero from "@/components/public/Hero";
+import SectorFinderSection from "@/components/public/SectorFinderSection";
 import WhyUs from "@/components/public/WhyUs";
 import SolutionsGrid from "@/components/public/SolutionsGrid";
 import StatsCounter from "@/components/public/StatsCounter";
@@ -20,7 +21,11 @@ export default async function HomePage({
       where: { published: true },
       orderBy: { sortOrder: "asc" },
       take: 6,
-      include: {
+      select: {
+        slug: true,
+        category: true,
+        icon: true,
+        coverImage: true,
         translations: {
           where: { locale },
           select: { title: true, shortDescription: true },
@@ -48,6 +53,7 @@ export default async function HomePage({
   return (
     <>
       <Hero />
+      <SectorFinderSection locale={locale} />
       <WhyUs />
       <SolutionsGrid products={products} />
       <StatsCounter stats={stats} />

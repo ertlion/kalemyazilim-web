@@ -5,8 +5,8 @@
   --color-primary-dark: #0284c7;
   --color-primary-light: #38bdf8;
   --color-accent: #6366f1;
-  --color-dark: #0f172a;
-  --color-dark-light: #1e293b;
+  --color-dark: #1e293b;
+  --color-dark-light: #334155;
   --color-background: #ffffff;
   --color-foreground: #0f172a;
   --color-muted: #f8fafc;
@@ -108,6 +108,15 @@ html {
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes marqueeScroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 

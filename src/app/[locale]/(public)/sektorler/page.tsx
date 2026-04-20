@@ -29,7 +29,7 @@ const industries = [
     titleTr: "Market / Bakkal",
     titleEn: "Market / Grocery",
     descTr:
-      "Barkod yonetimi, stok takibi ve hizli satis noktasi cozumleri ile market ve bakkal isletmenizi dijitallestirin.",
+      "Barkod yönetimi, stok takibi ve hızlı satış noktası çözümleri ile market ve bakkal işletmenizi dijitalleştirin.",
     descEn:
       "Digitize your market and grocery business with barcode management, inventory tracking, and fast POS solutions.",
   },
@@ -38,7 +38,7 @@ const industries = [
     titleTr: "Tekstil / Moda",
     titleEn: "Textile / Fashion",
     descTr:
-      "Beden-renk varyant yonetimi, sezon takibi ve coklu magaza destegi ile tekstil sektorune ozel cozumler.",
+      "Beden-renk varyant yönetimi, sezon takibi ve çoklu mağaza desteği ile tekstil sektörüne özel çözümler.",
     descEn:
       "Specialized solutions for the textile industry with size-color variant management, season tracking, and multi-store support.",
   },
@@ -47,7 +47,7 @@ const industries = [
     titleTr: "Eczane",
     titleEn: "Pharmacy",
     descTr:
-      "Ilac takip sistemi (ITS) entegrasyonu, recete yonetimi ve stok kontrol cozumleri.",
+      "İlaç Takip Sistemi (İTS) entegrasyonu, reçete yönetimi ve stok kontrol çözümleri.",
     descEn:
       "Drug tracking system integration, prescription management, and inventory control solutions.",
   },
@@ -56,7 +56,7 @@ const industries = [
     titleTr: "Restoran / Kafe",
     titleEn: "Restaurant / Cafe",
     descTr:
-      "Masa yonetimi, siparis takibi, mutfak ekrani ve paket servis entegrasyonu.",
+      "Masa yönetimi, sipariş takibi, mutfak ekranı ve paket servis entegrasyonu.",
     descEn:
       "Table management, order tracking, kitchen display, and delivery service integration.",
   },
@@ -65,7 +65,7 @@ const industries = [
     titleTr: "Elektronik",
     titleEn: "Electronics",
     descTr:
-      "Seri numara takibi, garanti yonetimi ve teknik servis modulleri ile elektronik perakende cozumleri.",
+      "Seri numara takibi, garanti yönetimi ve teknik servis modülleri ile elektronik perakende çözümleri.",
     descEn:
       "Electronics retail solutions with serial number tracking, warranty management, and technical service modules.",
   },
@@ -74,7 +74,7 @@ const industries = [
     titleTr: "Mobilya",
     titleEn: "Furniture",
     descTr:
-      "Siparis bazli uretim takibi, teslimat planlamasi ve showroom yonetimi.",
+      "Sipariş bazlı üretim takibi, teslimat planlaması ve showroom yönetimi.",
     descEn:
       "Order-based production tracking, delivery planning, and showroom management.",
   },

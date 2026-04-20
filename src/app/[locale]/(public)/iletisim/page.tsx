@@ -162,7 +162,7 @@ export default function ContactPage() {
                       rows={6}
                       value={formData.message}
                       onChange={handleChange}
-                      className="w-full resize-none rounded-xl border border-border bg-muted/50 px-4 py-3 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:bg-white focus:shadow-[0_0_0_3px_rgba(14,165,233,0.1)]"
+                      className="w-full resize-none rounded-xl border border-border bg-white px-4 py-3 text-sm text-dark outline-none ring-offset-2 transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
 
@@ -253,7 +253,7 @@ function InputField({
       </label>
       <input
         {...props}
-        className="w-full rounded-xl border border-border bg-muted/50 px-4 py-3 text-sm text-dark outline-none transition-all duration-300 focus:border-primary focus:bg-white focus:shadow-[0_0_0_3px_rgba(14,165,233,0.1)]"
+        className="w-full rounded-xl border border-border bg-white px-4 py-3 text-sm text-dark outline-none ring-offset-2 transition-all duration-300 focus:border-primary focus:ring-2 focus:ring-primary/20"
       />
     </div>
   );

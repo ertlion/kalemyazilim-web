@@ -3,13 +3,14 @@
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { ArrowRight, PhoneCall, Globe, Users, CalendarDays } from "lucide-react";
+import SectorsMarquee from "./SectorsMarquee";
 
 export default function Hero() {
   const t = useTranslations("hero");
   const ft = useTranslations("footer");
 
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden gradient-mesh">
+    <section className="relative min-h-[90vh] flex flex-col overflow-hidden gradient-mesh">
       {/* Animated gradient mesh orbs */}
       <div
         className="animate-orb-1 absolute top-[10%] left-[15%] h-[500px] w-[500px] rounded-full opacity-30 blur-[100px]"
@@ -62,7 +63,9 @@ export default function Hero() {
         style={{ animationDuration: "5s", animationDelay: "2s" }}
       />
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-32 lg:py-40">
+      {/* Centered content wrapper — marquee flex-col'un altında kalsın */}
+      <div className="relative flex flex-1 items-center">
+      <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 py-24 lg:py-28">
         <div className="max-w-3xl">
           {/* Badge */}
           <div className="animate-fade-in-up mb-6 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-sm text-primary-light backdrop-blur-sm">
@@ -131,9 +134,14 @@ export default function Hero() {
           </div>
         </div>
       </div>
+      </div>
+      {/* /centered content wrapper */}
 
-      {/* Bottom gradient fade */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-background to-transparent" />
+      {/* Sectors marquee - butonların ALTINDAN boydan boya sürekli akar */}
+      <div className="relative z-[1] animate-[fadeInUp_0.6s_ease-out_0.9s_both]">
+        <SectorsMarquee />
+      </div>
+
     </section>
   );
 }

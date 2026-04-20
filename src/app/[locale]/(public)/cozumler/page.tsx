@@ -1,6 +1,7 @@
 import { setRequestLocale, getTranslations } from "next-intl/server";
 import { prisma } from "@/lib/db";
 import PageHeader from "@/components/public/PageHeader";
+import SectorFinderSection from "@/components/public/SectorFinderSection";
 import SolutionsFilter from "./SolutionsFilter";
 import type { Metadata } from "next";
 
@@ -51,6 +52,9 @@ export default async function SolutionsPage({ params }: Props) {
           <SolutionsFilter products={products} />
         </div>
       </section>
+
+      {/* Akıllı Çözüm Önerisi */}
+      <SectorFinderSection locale={locale} />
     </div>
   );
 }

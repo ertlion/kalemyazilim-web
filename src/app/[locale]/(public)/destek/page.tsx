@@ -15,28 +15,28 @@ import { cn } from "@/lib/utils";
 const faqData = {
   tr: [
     {
-      q: "Kalem Yazilim urunlerini nasil satin alabilirim?",
-      a: "Web sitemizden iletisim formu doldurarak veya dogrudan telefon ile bize ulasabilirsiniz. Satis ekibimiz size en uygun paketi belirleyecektir.",
+      q: "Kalem Yazılım ürünlerini nasıl satın alabilirim?",
+      a: "Web sitemizden iletişim formu doldurarak veya doğrudan telefon ile bize ulaşabilirsiniz. Satış ekibimiz size en uygun paketi belirleyecektir.",
     },
     {
-      q: "Kurulum sureci ne kadar surer?",
-      a: "Standart kurulumlar 1-3 is gunu icinde tamamlanir. Ozel entegrasyonlar gerektiren projeler icin detayli bir zaman cizelgesi sunulur.",
+      q: "Kurulum süreci ne kadar sürer?",
+      a: "Standart kurulumlar 1-3 iş günü içinde tamamlanır. Özel entegrasyonlar gerektiren projeler için detaylı bir zaman çizelgesi sunulur.",
     },
     {
       q: "Teknik destek saatleri nedir?",
-      a: "7/24 teknik destek hattimiz uzerinden bize ulasabilirsiniz. Kritik sorunlar icin aninda mudahale garantisi sunuyoruz.",
+      a: "7/24 teknik destek hattımız üzerinden bize ulaşabilirsiniz. Kritik sorunlar için anında müdahale garantisi sunuyoruz.",
     },
     {
-      q: "Veri guvenligi nasil saglaniyor?",
-      a: "Tum verileriniz sifreli olarak saklanir. Duzenli yedekleme yapilir ve KVKK uyumlu altyapimizla verileriniz guvende.",
+      q: "Veri güvenliği nasıl sağlanıyor?",
+      a: "Tüm verileriniz şifreli olarak saklanır. Düzenli yedekleme yapılır ve KVKK uyumlu altyapımızla verileriniz güvende.",
     },
     {
-      q: "Egitim destegi sunuyor musunuz?",
-      a: "Evet, tum urunlerimiz icin kapsamli egitim programlari sunuyoruz. Online ve yerinde egitim secenekleri mevcuttur.",
+      q: "Eğitim desteği sunuyor musunuz?",
+      a: "Evet, tüm ürünlerimiz için kapsamlı eğitim programları sunuyoruz. Online ve yerinde eğitim seçenekleri mevcuttur.",
     },
     {
-      q: "Mevcut sistemimle entegrasyon yapilabilir mi?",
-      a: "Evet, acik API yapimiz sayesinde mevcut ERP, muhasebe ve e-ticaret sistemlerinizle sorunsuz entegrasyon sagliyoruz.",
+      q: "Mevcut sistemimle entegrasyon yapılabilir mi?",
+      a: "Evet, açık API yapımız sayesinde mevcut ERP, muhasebe ve e-ticaret sistemlerinizle sorunsuz entegrasyon sağlıyoruz.",
     },
   ],
   en: [
@@ -113,35 +113,43 @@ export default function SupportPage() {
 
   const faqs = faqData[locale as "tr" | "en"] || faqData.tr;
 
-  const supportChannels = [
+  const supportChannels: {
+    icon: typeof Headphones;
+    title: string;
+    value: string;
+    href?: string;
+    description: string;
+  }[] = [
     {
       icon: Headphones,
-      title: locale === "tr" ? "Telefon Destegi" : "Phone Support",
-      value: "+90 (212) 000 00 00",
+      title: locale === "tr" ? "Telefon Desteği" : "Phone Support",
+      value: "0850 800 21 21",
+      href: "tel:+908508002121",
       description:
         locale === "tr"
-          ? "7/24 teknik destek hatti"
-          : "24/7 technical support line",
+          ? "7/24 teknik destek hattı · Merkez: 0 (212) 222 21 21"
+          : "24/7 technical support · HQ: +90 (212) 222 21 21",
     },
     {
       icon: Mail,
-      title: locale === "tr" ? "E-posta Destegi" : "Email Support",
+      title: locale === "tr" ? "E-posta Desteği" : "Email Support",
       value: "destek@kalemyazilim.com",
+      href: "mailto:destek@kalemyazilim.com",
       description:
         locale === "tr"
-          ? "En gec 2 saat icinde yanit"
+          ? "En geç 2 saat içinde yanıt"
           : "Response within 2 hours",
     },
     {
       icon: MessageCircle,
-      title: locale === "tr" ? "Canli Destek" : "Live Chat",
+      title: locale === "tr" ? "Canlı Destek" : "Live Chat",
       value:
         locale === "tr"
           ? "Pazartesi - Cuma: 09:00 - 18:00"
           : "Monday - Friday: 09:00 - 18:00",
       description:
         locale === "tr"
-          ? "Aninda baglanti, bekleme yok"
+          ? "Anında bağlantı, bekleme yok"
           : "Instant connection, no waiting",
     },
   ];
@@ -194,9 +202,18 @@ export default function SupportPage() {
                         {channel.title}
                       </h3>
                     </div>
-                    <p className="text-sm font-medium text-dark">
-                      {channel.value}
-                    </p>
+                    {channel.href ? (
+                      <a
+                        href={channel.href}
+                        className="text-sm font-medium text-dark transition-colors hover:text-primary"
+                      >
+                        {channel.value}
+                      </a>
+                    ) : (
+                      <p className="text-sm font-medium text-dark">
+                        {channel.value}
+                      </p>
+                    )}
                     <p className="mt-1 text-xs text-muted-foreground">
                       {channel.description}
                     </p>
